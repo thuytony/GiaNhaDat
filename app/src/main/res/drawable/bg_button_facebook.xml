@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#7b8f8585"/>
+                    <!-- alttan gölge -->
+                    <corners android:radius="600dp"/>
+                </shape>
+            </item>
+            <item android:bottom="5px">
+                <shape xmlns:android="http://schemas.android.com/apk/res/android">
+                    <solid
+                        android:color="#181381"></solid>
+                    <corners
+                        android:radius="600dp" />
+                    <padding
+                        android:left="10dp"
+                        android:top="10dp"
+                        android:right="10dp"
+                        android:bottom="10dp" />
+                    <stroke
+                        android:width="3px" android:color="#358f8585"/>
+                </shape>
+            </item>
+            <item android:left="30dp" android:width="1dp" android:height="1dp">
+                <bitmap android:gravity="center_vertical|left" android:src="@drawable/icon_facebook" />
+            </item>
+            <item android:left="70dp" android:width="1dp" android:height="5dp">
+                <bitmap android:gravity="center_vertical|left" android:src="@drawable/icon_line" />
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#7b8f8585"/>
+                    <!-- alttan gölge -->
+                    <corners android:radius="600dp"/>
+                </shape>
+            </item>
+            <item android:bottom="5px">
+                <shape xmlns:android="http://schemas.android.com/apk/res/android">
+                    <solid
+                        android:color="#181381"></solid>
+                    <corners
+                        android:radius="600dp" />
+                    <padding
+                        android:left="10dp"
+                        android:top="10dp"
+                        android:right="10dp"
+                        android:bottom="10dp" />
+                    <stroke
+                        android:width="3px" android:color="#358f8585"/>
+                </shape>
+            </item>
+            <item android:left="30dp" android:width="1dp" android:height="1dp">
+                <bitmap android:gravity="center_vertical|left" android:src="@drawable/icon_facebook" />
+            </item>
+            <item android:left="70dp" android:width="1dp" android:height="5dp">
+                <bitmap android:gravity="center_vertical|left" android:src="@drawable/icon_line" />
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="#358f8585"/>
+                    <!-- alttan gölge -->
+                    <corners android:radius="600dp"/>
+                </shape>
+            </item>
+            <item android:bottom="5px">
+                <shape xmlns:android="http://schemas.android.com/apk/res/android">
+                    <gradient
+                        android:startColor="#3e39b9"
+                        android:endColor="#201b9c"
+                        android:angle="0" />
+                    <corners
+                        android:radius="600dp" />
+                    <padding
+                        android:left="10dp"
+                        android:top="10dp"
+                        android:right="10dp"
+                        android:bottom="10dp" />
+                    <stroke
+                        android:width="3px" android:color="#358f8585"/>
+                </shape>
+            </item>
+            <item android:left="30dp" android:width="1dp" android:height="1dp">
+                <bitmap android:gravity="center_vertical|left" android:src="@drawable/icon_facebook" />
+            </item>
+            <item android:left="70dp" android:width="1dp" android:height="5dp">
+                <bitmap android:gravity="center_vertical|left" android:src="@drawable/icon_line" />
+            </item>
+        </layer-list>
+    </item>
+</selector>

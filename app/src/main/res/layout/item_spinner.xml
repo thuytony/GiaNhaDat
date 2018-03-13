@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatSpinner
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_icon_spinner"
+    android:paddingRight="2dp"
+    android:paddingLeft="2dp"
+    android:layout_marginTop="@dimen/padding_icon"
+    android:scrollbarThumbVertical="@android:color/white"
+    android:scrollbarThumbHorizontal="@android:color/white">
+
+</android.support.v7.widget.AppCompatSpinner>

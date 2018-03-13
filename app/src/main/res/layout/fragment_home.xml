@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeDrawer"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gianhadat.online.thuy.view.fragment.HomeFragment">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="gianhadat.online.thuy.view.fragment.HomeFragment"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_main_screen">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/toolBar">
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_menu_blue"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/layoutNew"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/imgLogo"
+            android:layout_marginTop="@dimen/margin_item_screen">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/mDemoSlider"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+            <ListView
+                android:id="@+id/transformers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></ListView>
+        </LinearLayout>
+        <gianhadat.online.thuy.view.widget.FontTextView
+            android:id="@+id/txtLabel"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25dp"
+            app:custom_font="DroidSerif-Regular"
+            android:text="Danh Sách Dịch Vụ"
+            android:padding="@dimen/padding_main_screen"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtLabel">
+            <com.dolphinwang.imagecoverflow.CoverFlowView
+                android:id="@+id/coverflow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:coverflowGravity="center_vertical"
+                app:coverflowLayoutMode="wrap_content"
+                app:reflectionGap="10dp"
+                app:reflectionHeight="30%"
+                app:visibleImage="5" />
+            <gianhadat.online.thuy.view.widget.FontTextView
+                android:id="@+id/txtContent"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/text_size_high"
+                app:custom_font="DroidSerif-Regular"
+                android:text="hdias djas d"
+                android:padding="@dimen/padding_main_screen"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary">
+        <include layout="@layout/ui_navigation_view"/>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

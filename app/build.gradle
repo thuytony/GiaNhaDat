@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+Properties props = new Properties()
+try {
+    props.load(file('gianhadat.properties').newDataInputStream())
+} catch (Exception ex) {
+    throw new GradleException("Missing gianhadat.properties, check the gianhadat.properties file.")
+}
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "gianhadat.online.thuy"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "DOMAIN", "\"${props.getProperty("debugDomain")}\""
+            buildConfigField "String", "DOMAIN_SOCKET", "\"${props.getProperty("socketDomain")}\""
+            buildConfigField "String", "API_VERSION", "\"${props.getProperty("apiVersion")}\""
+        }
+
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "DOMAIN", "\"${props.getProperty("releaseDomain")}\""
+            buildConfigField "String", "DOMAIN_SOCKET", "\"${props.getProperty("socketDomain")}\""
+            buildConfigField "String", "API_VERSION", "\"${props.getProperty("apiVersion")}\""
+        }
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    implementation deps.appcompat
+    implementation deps.supportDesign
+    implementation deps.supportCardview
+    implementation deps.constraintLayout
+    implementation deps.recyclerView
+    implementation deps.serviceMap
+    implementation deps.serviceLocation
+    implementation deps.imageLoader
+    implementation deps.retrofit
+    implementation deps.retrofitConvert
+    implementation deps.retrofitAdapter
+    implementation deps.rxjava
+    implementation deps.rxandroid
+    implementation deps.okHttp
+    implementation deps.okHttpLogging
+    implementation deps.eventBus
+    implementation deps.bottomBar
+    implementation deps.circularImageV
+    implementation deps.cricleImageView
+    implementation deps.socketIo
+    implementation deps.glide
+    annotationProcessor deps.glideAnnotation
+    implementation deps.matterialDialog
+    implementation deps.fresco
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    implementation project(':library')
+    implementation project(':libraryEditText')
+    implementation project(':slideImage')
+    implementation 'com.mikhaellopez:circularimageview:3.0.2'
+    implementation project(':coverFlowNew')
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_tiny">6sp</dimen>
+    <dimen name="text_size_mini">10sp</dimen>
+    <dimen name="text_size_normal">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_high">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_logo">60sp</dimen>
+
+    <dimen name="padding_main_screen">16dp</dimen>
+    <dimen name="margin_item_screen">10dp</dimen>
+    <dimen name="padding_icon">5dp</dimen>
+    <dimen name="padding_hoz_toolbar">20dp</dimen>
+    <dimen name="padding_ver_toolbar">6dp</dimen>
+    <dimen name="margin_top_matterial_edt">5dp</dimen>
+
+    <!--cover flow-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="padding_left_right_item_in_group">3dp</dimen>
+    <dimen name="margin_top_in_group">10dp</dimen>
+    <dimen name="padding_description_guess">70dp</dimen>
+
+    <!--register-->
+    <dimen name="padding_edt_register">32dp</dimen>
+    <dimen name="padding_top_bottom_edt">13dp</dimen>
+    <dimen name="padding_edt_login">48dp</dimen>
+    <dimen name="padding_top_bottom_edt_login">16dp</dimen>
+</resources>

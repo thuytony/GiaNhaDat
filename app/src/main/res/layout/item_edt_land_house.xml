@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gianhadat.online.thuy.view.widget.FontEditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Hải Dương"
+    android:textColor="@color/colorText"
+    android:textColorHint="@color/colorGrayText"
+    app:custom_font="DroidSerif-Regular"
+    android:textSize="@dimen/text_size_high"
+    android:backgroundTint="@color/color_tinit_edt"
+    android:textCursorDrawable="@drawable/bg_cursor_color"
+    android:clickable="true"/>

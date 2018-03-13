@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gianhadat.online.thuy.view.fragment.LandHouseFragment"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_main_screen">
+    <LinearLayout
+        android:id="@+id/groupCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableCity"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerCity" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorCity"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupCity"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableDistrict"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerDistrict" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorDistrict"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupStreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupDistrict"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableStreet"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerStreet" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorStreet"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupStreet"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableLocation"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerLocation" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorLocation"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupStreetWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/groupLocation">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/labelStreetWidth"/>
+        <include layout="@layout/item_edt_land_house"
+            android:id="@+id/edtStreetWidth"/>
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorStreetWidth"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupLocationAsset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/groupStreetWidth"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/labelLocationAsset"/>
+        <include layout="@layout/item_edt_land_house"
+            android:id="@+id/edtLocationAsset"/>
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorLocationAsset"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupFacade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/groupLocationAsset"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/labelFacade"/>
+        <include layout="@layout/item_edt_land_house"
+            android:id="@+id/edtFacade"/>
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorFacade"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupAcreage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/groupFacade"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/labelAcreage"/>
+        <include layout="@layout/item_edt_land_house"
+            android:id="@+id/edtAcreage"/>
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorAcreage"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupShape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupAcreage"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableShape"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerShape" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorShape"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupMattiepgiap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupShape"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableMattiepgiap"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerMattiepgiap" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorMattiepgiap"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupTraffic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupMattiepgiap"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableTraffic"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerTraffic" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorTraffic"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupBusinessAdvantage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupMattiepgiap"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableBusinessAdvantage"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerBusinessAdvantage" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorBusinessAdvantage"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/groupCoGiaiToa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/groupBusinessAdvantage"
+        android:layout_marginTop="@dimen/margin_top_in_group">
+        <include layout="@layout/item_label_land_house"
+            android:id="@+id/lableCoGiaiToa"/>
+        <include layout="@layout/item_spinner"
+            android:id="@+id/spinnerCoGiaiToa" />
+        <include layout="@layout/item_error_land_house"
+            android:id="@+id/errorCoGiaiToa"/>
+    </LinearLayout>
+    <gianhadat.online.thuy.view.widget.FontButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thẩm định giá"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_medium"
+        app:custom_font="DroidSerif-Regular"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_submit"
+        android:padding="@dimen/margin_item_screen"/>
+</LinearLayout>

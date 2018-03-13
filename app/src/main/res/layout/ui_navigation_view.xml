@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_main_screen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            android:src="@drawable/image_cover"/>
+
+        <gianhadat.online.thuy.view.widget.FontTextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="14dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_high"
+            app:custom_font="DroidSerif-Regular"
+            android:text="Thùy Tony"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_item_screen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Item Dịch vụ-->
+        <LinearLayout
+            android:id="@+id/itemService"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:layout_marginLeft="4dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_service" />
+
+            <gianhadat.online.thuy.view.widget.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_main_screen"
+                android:text="@string/title_service"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                app:custom_font="DroidSerif-Regular"
+                android:textAllCaps="true"/>
+        </LinearLayout>
+        <!--Item Nhà Đất-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="45dp">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+            <LinearLayout
+                android:id="@+id/itemNhaDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/bg_nha_dat_navigation">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_search"
+                    android:visibility="invisible"/>
+
+                <gianhadat.online.thuy.view.widget.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_main_screen"
+                    android:text="@string/title_nha_dat"
+                    android:textColor="@color/color_iem_navigation"
+                    android:textSize="@dimen/text_size_medium"
+                    app:custom_font="DroidSerif-Regular" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+            <!--Item Chung Cư-->
+            <LinearLayout
+                android:id="@+id/itemChungCu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/bg_chung_cu_navigation">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_search"
+                    android:visibility="invisible"/>
+
+                <gianhadat.online.thuy.view.widget.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_main_screen"
+                    android:text="@string/title_chung_cu"
+                    android:textColor="@color/color_iem_navigation"
+                    android:textSize="@dimen/text_size_medium"
+                    app:custom_font="DroidSerif-Regular" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+            <!--Item Vận Tải-->
+            <LinearLayout
+                android:id="@+id/itemVanTai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/bg_car_navigation">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_search"
+                    android:visibility="invisible"/>
+
+                <gianhadat.online.thuy.view.widget.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_main_screen"
+                    android:text="@string/title_van_tai"
+                    android:textColor="@color/color_iem_navigation"
+                    android:textSize="@dimen/text_size_medium"
+                    app:custom_font="DroidSerif-Regular" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+            <!--Item CT xây dựng-->
+            <LinearLayout
+                android:id="@+id/itemXayDung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:background="@drawable/bg_xay_dung_navigation">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_search"
+                    android:visibility="invisible"/>
+
+                <gianhadat.online.thuy.view.widget.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_main_screen"
+                    android:text="@string/title_xay_dung"
+                    android:textColor="@color/color_iem_navigation"
+                    android:textSize="@dimen/text_size_medium"
+                    app:custom_font="DroidSerif-Regular" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine"/>
+        </LinearLayout>
+        <!--Item Tin tức-->
+        <LinearLayout
+            android:id="@+id/itemNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/bg_new_navigation">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_info"
+                android:visibility="invisible"/>
+
+            <gianhadat.online.thuy.view.widget.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_main_screen"
+                android:text="@string/title_new"
+                android:textColor="@color/color_iem_navigation"
+                android:textSize="@dimen/text_size_medium"
+                app:custom_font="DroidSerif-Regular"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+        <!--Item Yêu cầu định giá-->
+        <LinearLayout
+            android:id="@+id/itemSupport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/bg_require_navigation">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_info"
+                android:visibility="invisible"/>
+
+            <gianhadat.online.thuy.view.widget.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_main_screen"
+                android:text="@string/title_support"
+                android:textColor="@color/color_iem_navigation"
+                android:textSize="@dimen/text_size_medium"
+                app:custom_font="DroidSerif-Regular"
+                android:textAllCaps="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

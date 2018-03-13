@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1f9fc2</color>
+    <color name="colorPrimaryDark">#4fa4ca</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorGrayText">#909090</color>
+    <color name="colorText">#BF000000</color>
+    <color name="colorLine">#12000000</color>
+    <color name="colorButtonDefault">#bc1c99ec</color>
+    <color name="colorTextItem">#030303</color>
+    <color name="colorToastSuccess">#f025da55</color>
+    <color name="colorToastInfo">#f06177e9</color>
+    <color name="errorColor">#de1111</color>
+
+    <color name="colorTextLocationAsset">#800657</color>
+    <color name="colorLabelHint">#044b5e</color>
+
+    <color name="dropDownArrowColor">#909090</color>
+    <color name="colorCickButton">#1687a6</color>
+
+    <!--spinner-->
+
+</resources>

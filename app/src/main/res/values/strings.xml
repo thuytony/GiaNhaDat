@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">GiaNhaDat</string>
+    <string name="spinner_city">Thành phố/ Tỉnh</string>
+    <string name="spinner_district">Quận/ Huyện</string>
+    <string name="spinner_street">Đường/ Phố</string>
+    <string name="spinner_location">Vị trí</string>
+    <string name="edt_street_width">Chiều rộng đường (m)</string>
+    <string name="hint_street_width">(vd: 10)</string>
+    <string name="edt_location_asset">Vị trí tải sản</string>
+    <string name="hint_location_asset">Vị trí tải sản</string>
+    <string name="edt_facade">Mặt tiền (m)</string>
+    <string name="hint_facade">(vd: 8))</string>
+    <string name="edt_acreage">Diện tích (m2)</string>
+    <string name="hint_acreage">(vd: 1000)</string>
+    <string name="spinner_shape">Hình dạng</string>
+    <string name="spinner_mat_tiep_giap">Số mặt tiếp giáp đường</string>
+    <string name="spinner_traffic">Giao thông</string>
+    <string name="spinner_business_advantage">Lợi thế kinh doanh</string>
+    <string name="spinner_co_giai_toa">Có giải tỏa</string>
+
+    <string-array name="font_name">
+        <item>DroidSerif-Regular.ttf</item>
+        <item>asman.ttf</item>
+    </string-array>
+
+    <!--title-->
+    <string name="title_service">Dịch vụ</string>
+    <string name="title_nha_dat">Định Giá Nhà Đất</string>
+    <string name="title_chung_cu">Định Giá Chung Cư</string>
+    <string name="title_van_tai">Định Giá PT Vận Tải</string>
+    <string name="title_xay_dung">Định Giá CT Xây Dựng</string>
+    <string name="title_new">Tin Tức</string>
+    <string name="title_support">Yêu Cầu Định Giá</string>
+    <string name="title_detail_new">Tin chi tiết</string>
+
+
+</resources>

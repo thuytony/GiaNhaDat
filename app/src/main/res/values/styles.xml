@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <declare-styleable name="FontStyleable">
+        <attr name="custom_font">
+            <enum name="DroidSerif-Regular" value="0"></enum>
+            <enum name="asman" value="1"></enum>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ToolbarStyleable">
+        <attr name="title" format="string"></attr>
+    </declare-styleable>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/text_size_high</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="CustomStyleDialog" parent="android:Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="gianhadat.online.thuy.view.activity.RegisterActivity"
+    android:orientation="vertical">
+    <gianhadat.online.thuy.view.widget.UiToolBarGuess
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_main_screen">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+            <gianhadat.online.thuy.view.widget.FontTextView
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:custom_font="DroidSerif-Regular"
+                android:text="Đăng nhập"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal" />
+            <View
+                android:layout_width="100dp"
+                android:layout_height="2dp"
+                android:background="@color/colorLine"
+                android:layout_margin="@dimen/padding_main_screen"/>
+            <gianhadat.online.thuy.view.widget.FontTextView
+                android:id="@+id/txtDescriptionLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_high"
+                android:text="Hãy đăng ký để trải nhiệm dịch vụ của chúng tôi"
+                app:custom_font="DroidSerif-Regular"
+                android:paddingRight="@dimen/padding_description_guess"
+                android:paddingLeft="@dimen/padding_description_guess"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/padding_main_screen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <gianhadat.online.thuy.view.widget.FontButton
+                android:id="@+id/btnLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                app:custom_font="DroidSerif-Regular"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_email"
+                android:padding="@dimen/margin_item_screen"
+                android:layout_marginBottom="@dimen/padding_main_screen" />
+            <gianhadat.online.thuy.view.widget.FontButton
+                android:id="@+id/btnLoginGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Google"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                app:custom_font="DroidSerif-Regular"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_google"
+                android:padding="@dimen/margin_item_screen"
+                android:layout_marginBottom="@dimen/padding_main_screen" />
+            <gianhadat.online.thuy.view.widget.FontButton
+                android:id="@+id/btnLoginFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold"
+                app:custom_font="DroidSerif-Regular"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_button_facebook"
+                android:padding="@dimen/margin_item_screen"
+                android:layout_marginBottom="@dimen/padding_main_screen" />
+            <gianhadat.online.thuy.view.widget.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_medium"
+                android:text="Chưa có tài khoản? Đăng ký ngay"
+                app:custom_font="DroidSerif-Regular"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:gravity="center_horizontal"
+                android:layout_alignParentTop="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
