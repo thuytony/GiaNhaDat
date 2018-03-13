@@ -26,5 +26,11 @@ class GuessActivity : AppCompatActivity() {
             startActivity(intent)
             overridePendingTransition(R.anim.mainfadein, R.anim.splashfadeout)
         }
+
+        //
+        var intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
+        overridePendingTransition(R.anim.mainfadein, R.anim.splashfadeout)
+        //
     }
 }
