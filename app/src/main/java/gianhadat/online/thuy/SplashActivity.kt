@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import gianhadat.online.thuy.view.activity.GuessActivity
+import gianhadat.online.thuy.view.activity.HomeActivity
 
 
 class SplashActivity : AppCompatActivity() {
@@ -13,7 +14,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        var intent = Intent(this, GuessActivity::class.java)
+        var intent = Intent(this, HomeActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         val handler = Handler()
         handler.postDelayed(Runnable {
